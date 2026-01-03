@@ -1,6 +1,6 @@
 {
-  "version": "0.3.0",
-  "installed_at": "2026-01-03T05:49:38Z",
+  "version": "0.2.0",
+  "installed_at": "2026-01-03T05:54:30Z",
   "services": ["api"],
   "project_name": "idrm-sdd-demo",
   "go_module": "github.com/jinguoxing/idrm-sdd-demo",

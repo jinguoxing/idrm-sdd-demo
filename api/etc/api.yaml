@@ -51,6 +51,13 @@ DB:
     SingularTable: true
     DisableForeignKey: true
 
+# Redis 配置
+Redis:
+  Host: localhost
+  Port: 6379
+  DB: 0
+  Password: ""
+
 # 认证配置
 Auth:
   AccessSecret: 365ed1e031d260f225b8a372081e6d0dfa92a5ce9d13f6f4b17cad26e6f3ed92
