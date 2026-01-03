@@ -1,0 +1,12 @@
+{
+  "version": "0.1.0",
+  "installed_at": "2026-01-03T03:12:41Z",
+  "services": ["api"],
+  "project_name": "idrm-sdd-demo",
+  "go_module": "github.com/jinguoxing/idrm-sdd-demo",
+  "db_config": {
+    "host": "localhost",
+    "port": 3306,
+    "database": "idrm_demo"
+  }
+}
