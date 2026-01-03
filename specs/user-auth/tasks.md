@@ -73,18 +73,18 @@
 
 ### Step 1: 定义 API 文件
 
-- [ ] T011 [US1] 将 `contracts/user_auth.api` 复制到 `api/doc/auth/user_auth.api`
-- [ ] T012 [US1] 在 `api/doc/api.api` 中 import auth 模块：`import "auth/user_auth.api"`
-- [ ] T013 [US1] 验证 API 文件语法：`goctl api validate --api api/doc/api.api`
+- [x] T011 [US1] 将 `contracts/user_auth.api` 复制到 `api/doc/auth/user_auth.api`
+- [x] T012 [US1] 在 `api/doc/api.api` 中 import auth 模块：`import "auth/user_auth.api"`
+- [x] T013 [US1] 验证 API 文件语法：`goctl api validate --api api/doc/api.api`
 
 ### Step 2: 生成代码
 
-- [ ] T014 [US1] 运行 goctl 生成 Handler/Types：`goctl api go -api api/doc/api.api -dir api/ --style=go_zero --type-group`
-- [ ] T015 [US1] 运行 goctl 生成 Swagger 文档：`goctl api swagger --api api/doc/api.api --dir api/swagger --filename api`
+- [x] T014 [US1] 运行 goctl 生成 Handler/Types：`goctl api go -api api/doc/api.api -dir api/ --style=go_zero --type-group`
+- [x] T015 [US1] 运行 goctl 生成 Swagger 文档：`goctl api swagger --api api/doc/api.api --dir api/swagger --filename api`
 
 ### Step 3: 定义 DDL
 
-- [ ] T016 [P] [US1] 创建 `migrations/auth/users.sql`，定义 users 表结构（包含 phone, password_hash, nickname, status, failed_attempts, locked_until 等字段）
+- [x] T016 [P] [US1] 创建 `migrations/auth/users.sql`，定义 users 表结构（包含 phone, password_hash, nickname, status, failed_attempts, locked_until 等字段）
 - [ ] T017 [US1] 执行数据库迁移：`mysql -u root -p idrm_demo < migrations/auth/users.sql`
 
 ### Step 4: 实现 Model 层 - User
